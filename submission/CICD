@@ -1,0 +1,75 @@
+$ gh run view 35760804594 --repo Fallop/xrwvm-fullstack_developer_capstone
+
+✓ main Lint Code · 35760804594
+Triggered via push less than a minute ago
+
+JOBS
+✓ Lint Python Files in 10s (ID 106858053836)
+✓ Lint JavaScript Files in 9s (ID 106858054988)
+
+
+
+
+
+
+For more information about a job, try: gh run view --job=<job-id>
+View this run on GitHub: https://github.com/Fallop/xrwvm-fullstack_developer_capstone/actions/runs/35760804594
+
+$ gh run view --job=106858053836 --repo Fallop/xrwvm-fullstack_developer_capstone
+
+✓ main Lint Code · 35760804594
+Triggered via push less than a minute ago
+
+✓ Lint Python Files in 10s (ID 106858053836)
+  ✓ Set up job
+  ✓ Checkout Repository
+  ✓ Set up Python
+  ✓ Install dependencies
+  ✓ Print working directory
+  ✓ Run Linter
+  ✓ Post Set up Python
+  ✓ Post Checkout Repository
+  ✓ Complete job
+
+
+
+
+To see the full job log, try: gh run view --log --job=106858053836
+View this run on GitHub: https://github.com/Fallop/xrwvm-fullstack_developer_capstone/actions/runs/35760804594
+
+$ gh run view --job=106858054988 --repo Fallop/xrwvm-fullstack_developer_capstone
+
+✓ main Lint Code · 35760804594
+Triggered via push less than a minute ago
+
+✓ Lint JavaScript Files in 9s (ID 106858054988)
+  ✓ Set up job
+  ✓ Checkout Repository
+  ✓ Install Node.js
+  ✓ Install JSHint
+  ✓ Run Linter
+  ✓ Post Install Node.js
+  ✓ Post Checkout Repository
+  ✓ Complete job
+
+
+
+
+To see the full job log, try: gh run view --log --job=106858054988
+View this run on GitHub: https://github.com/Fallop/xrwvm-fullstack_developer_capstone/actions/runs/35760804594
+
+$ gh run view 35760804594 --repo Fallop/xrwvm-fullstack_developer_capstone --log (Run Linter steps)
+Lint Python Files	Run Linter	##[group]Run pwd
+Lint Python Files	Run Linter	pwd
+Lint Python Files	Run Linter	# This command finds all Python files recursively and runs flake8 on them
+Lint Python Files	Run Linter	find . -name "*.py" -not -path "*/migrations/*" -exec flake8 {} +
+Lint Python Files	Run Linter	echo "Linted all the files successfully"
+Lint Python Files	Run Linter	##[endgroup]
+Lint Python Files	Run Linter	/home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone
+Lint Python Files	Run Linter	Linted all the files successfully
+Lint JavaScript Files	Run Linter	##[group]Run # This command finds all JavaScript files recursively and runs JSHint on them
+Lint JavaScript Files	Run Linter	# This command finds all JavaScript files recursively and runs JSHint on them
+Lint JavaScript Files	Run Linter	find ./server/database -name "*.js" -not -path "*/node_modules/*" -exec jshint {} +
+Lint JavaScript Files	Run Linter	echo "Linted all the files successfully"
+Lint JavaScript Files	Run Linter	##[endgroup]
+Lint JavaScript Files	Run Linter	Linted all the files successfully

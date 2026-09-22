@@ -23,6 +23,11 @@ spec:
       - image: dealership:latest
         imagePullPolicy: IfNotPresent
         name: dealership
+        env:
+        - name: backend_url
+          value: http://host.docker.internal:3030
+        - name: sentiment_analyzer_url
+          value: http://host.docker.internal:5050/
         ports:
         - containerPort: 8000
           protocol: TCP

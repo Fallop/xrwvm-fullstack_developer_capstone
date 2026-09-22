@@ -134,3 +134,4 @@ server/db.sqlite3
 .claude/
 server/static/
 submission/capture_*.py
+.tools/

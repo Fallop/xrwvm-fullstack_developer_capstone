@@ -1,0 +1,16 @@
+$ python3 manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 22, 2026 - 11:21:49
+Django version 6.1.1, using settings 'djangoproj.settings'
+Starting WSGI development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+[22/Sep/2026 11:21:55] "GET / HTTP/1.1" 200 3103
+[22/Sep/2026 11:21:55] "GET /about/ HTTP/1.1" 200 3430
+[22/Sep/2026 11:21:55] "GET /dealers/ HTTP/1.1" 200 652
+GET from http://localhost:3030/fetchDealers 
+[22/Sep/2026 11:21:55] "GET /djangoapp/get_dealers HTTP/1.1" 200 12500
